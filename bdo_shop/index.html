@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/assets/css/itc-slider.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<!-- JavaScript -->
+	<script src="/assets/js/itc-slider.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div id="menu" class="container">
+			<div id="menu-bar" onclick="menuOnClick()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<div class="logo_block">
+				<a href="index.html">
+					<img src="img/logoBDOSHOP.png" alt="Logo" class="logo">
+				</a>
+			</div>
+			<nav onclick="menuOnClick()">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="purchase.html">Покупка</a></li>
+					<li><a href="transactions.html">Транзакции</a></li>
+					<li><a href="all_chat.html">Чаты</a></li>
+					<li><a href="register.html" class="register_header ">Регистрация</a></li>
+					<li><a href="authorization.html" class="authorization ">Вход</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="header_if_fixed hidden" id="go_up"></section>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true" style="display: none; overflow-y: auto;">
+		<div class="modal-dialog" role="document">
+			<form class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Напишите ваше обращение</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<label for="">Введите почту: </label>
+					<input type="email" class="subscription-email" id="email" required>
+					<label for="">Введите ваше обращение</label>
+					<textarea id="text" required></textarea>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					<button type="submit" class="btn btn-primary">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<a href="#go_up" class="go_upblock go_upblock_yes">
+		<img src="img/go_up_arrow.svg" alt="">
+	</a>
+
+	<section>
+		<div class="video_wrap">
+			<video id="videoTag" muted="muted" preload="none" loop="loop" data-resize="true" autoplay="" class="on"
+				data-video="0">
+				<source class="webmSrc" type="video/webm" src="video/maeguwoosa_main_loop.webm"
+					onerror="document.getElementsByClassName('video_wrap')[0].style.display = 'none';">
+			</video>
+		</div>
+		<div class="container video_container">
+			<h1>Торговая площадка<br>BDO SHOP</h1>
+			<a href="#peculiarities">
+				<div class="btn_down"></div>
+			</a>
+
+		</div>
+	</section>
+
+	<section id="peculiarities">
+
+		<div class="container peculiarities">
+			<h2>Особенности</h2>
+			<div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
+				<div class="itc-slider__wrapper">
+					<div class="itc-slider__items">
+						<div class="itc-slider__item">
+							<img src="/img/slider1.png" alt="">
+						</div>
+						<div class="itc-slider__item">
+							<img src="/img/slider2.png" alt="">
+						</div>
+						<div class="itc-slider__item">
+							<img src="/img/slider3.png" alt="">
+						</div>
+					</div>
+				</div>
+				<ol class="itc-slider__indicators">
+					<li class="itc-slider__indicator" data-slide-to="0"></li>
+					<li class="itc-slider__indicator" data-slide-to="1"></li>
+					<li class="itc-slider__indicator" data-slide-to="2"></li>
+				</ol>
+			</div>
+
+		</div>
+	</section>
+
+
+
+	<section>
+		<div class="parallax parallax_news">
+			<div class="news_container news_container_pc">
+				<div class="news_item">
+					<div class="news_item_container">
+						<a href="https://www.ru.playblackdesert.com/News/Notice/Detail?boardType=3&boardNo=7082&boardMasterNo=1"
+							target="_blank">
+							<div class="img_area"><img src="img/9RNMDY6JY0G4DCNH20230118061212876.400x225.jpg" alt=""></div>
+							<div class="desc_area">
+								<p class="news_category">
+									Ивенты
+								</p>
+								<h3 class="title">Играйте персонажем класса «Мэгу» вместе с Верным молотом от J и Секундомером Фугара!
+								</h3>
+							</div>
+						</a>
+					</div>
+
+				</div>
+				<div class="news_item">
+					<div class="news_item_container">
+						<a href="https://www.ru.playblackdesert.com/News/Notice/Detail?boardType=4&boardNo=7048&boardMasterNo=1"
+							target="_blank">
+							<div class="img_area"><img src="img/2IX9H3SR47NRLVNW20221213122821415.400x225.jpg" alt=""></div>
+							<div class="desc_area">
+								<p class="news_category">
+									Ивенты
+								</p>
+								<h3 class="title">Сборник ивентов в честь появления нового класса «Мэгу»
+								</h3>
+							</div>
+						</a>
+					</div>
+
+				</div>
+				<div class="news_item">
+					<div class="news_item_container">
+						<a href="https://www.ru.playblackdesert.com/News/Notice/Detail?boardType=3&boardNo=6126&boardMasterNo=1"
+							target="_blank">
+							<div class="img_area"><img src="img/P0J77VJH6JRUYYWH20220727144938756.400x225.jpg" alt=""></div>
+							<div class="desc_area">
+								<p class="news_category">
+									Ивенты
+								</p>
+								<h3 class="title">Невероятные бонусы для начинающих и вернувшихся игроков
+								</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="news_site">
+				<button type="button" class="more_news" data-toggle="modal" data-target="#exampleModal"></button>
+				<h4>Обновления</h4>
+				<div class="news_site_items">
+					<ul>
+						<li class="block_active_news">
+							<button type="button">
+								<div class="text">
+									<p class="notes">[Заметки]</p>
+									<p class="update_text">Обновление системы обращения</p>
+									<span>01.02.2023</span>
+								</div>
+								<div class="active_news">
+									<ul>
+										<li>Добавление формы</li>
+										<li>Изменение оформления</li>
+										<li>Управление данными</li>
+									</ul>
+								</div>
+							</button>
+						</li>
+						<li class="block_active_news">
+							<button type="button">
+								<div class="text">
+									<p class="notes">[Заметки]</p>
+									<p class="update_text">Новая система покупки</p>
+									<span>10.01.2023</span>
+								</div>
+								<div class="active_news">
+									<ul>
+										<li>Добавление формы</li>
+										<li>Изменение оформления</li>
+										<li>Управление данными</li>
+										<li>Упрощенная оплата</li>
+									</ul>
+								</div>
+							</button>
+						</li>
+						<li class="block_active_news">
+							<button type="button">
+								<div class="text">
+									<p class="notes">[Заметки]</p>
+									<p class="update_text">Измененые личные кабинеты</p>
+									<span>10.12.2022</span>
+								</div>
+								<div class="active_news">
+									<ul>
+										<li>Новая аватарка</li>
+										<li>Хорошая адаптивность</li>
+										<li>Отзывы в профиле</li>
+									</ul>
+								</div>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mask"></div>
+		</div>
+	</section>
+	<section>
+		<div class="city_background wrapper">
+			<div class="container no_margin content">
+				<h2>Покупка</h2>
+				<div class="services__main">
+					<a href="purchase.html" class="services__main_item">
+						<img src="/img/server_version.png" alt="">
+						<p class="services__main_text">Серебро по любой цене</p>
+						<div class="services__main_border"></div>
+						<p class="services_desciption">Здесь вы можете купить серебро Black Desert Online по самым низким ценам
+							напрямую у игроков. Комиссия
+							аукциона компенсируется продавцами, но при условии наличия у вас пакета "Комфорт".</p>
+					</a>
+
+					<a href="purchase.html" class="services__main_item">
+						<img src="/img/monster_exp_rate.jpg" alt="">
+						<p class="services__main_text">Получение быстрого уровня</p>
+						<div class="services__main_border"></div>
+						<p class="services_desciption">Все сделки заключаются напрямую между игроками и проходят через гаранта -
+							систему безопасности нашей
+							биржи, продавец получает оплату только после выполнения заказа.</p>
+					</a>
+					<a href="purchase.html" class="services__main_item">
+						<img src="/img/monster_drop_rate.jpg" alt="">
+						<p class="services__main_text">Покупка внутриигровых предметов</p>
+						<div class="services__main_border"></div>
+						<p class="services_desciption">На нашей бирже можно купить вещи Black Desert Online по рыночным ценам. Все
+							сделки заключаются между
+							игроками напрямую и защищаются гарантом, по правилам которого продавцы получают оплату только после
+							выполнения заказов.</p>
+					</a>
+				</div>
+
+				<div class="footer">
+					<ul class="menu">
+						<a href="">
+							<li class="item">Условия использования</li>
+						</a>
+						<a href="">
+							<li class="item">Конфиденциальность</li>
+						</a>
+						<a href="" target="_blank">
+							<li class="item">Помощь</li>
+						</a>
+						<a href="" target="_blank">
+							<li class="item">Вопросы и ответы</li>
+						</a>
+					</ul>
+					<div class="container no_margin content">
+						<a href=""><img class="logo" src="/img/logoBDOSHOP.png"></a>
+						<div class="age right">18+</div>
+						<div class="copyright">
+
+							<span>Спроектировано для будующей торговой площадки © BDO SHOP</span>
+							Этот сайт не имеет никакого отношения к Pearl Abyss®
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="/scripts/script.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>

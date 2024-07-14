@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/assets/css/itc-slider.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<!-- JavaScript -->
+	<script src="/assets/js/itc-slider.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div id="menu" class="container">
+			<div id="menu-bar" onclick="menuOnClick()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<div class="logo_block">
+				<a href="index.html">
+					<img src="img/logoBDOSHOP.png" alt="Logo" class="logo">
+				</a>
+			</div>
+			<nav onclick="menuOnClick()">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="purchase.html">Покупка</a></li>
+					<li><a href="transactions.html">Транзакции</a></li>
+					<li><a href="all_chat.html">Чаты</a></li>
+					<li><a href="register.html" class="register_header ">Регистрация</a></li>
+					<li><a href="authorization.html" class="authorization ">Вход</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="header_if_fixed hidden" id="go_up"></section>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true" style="display: none; overflow-y: auto;">
+		<div class="modal-dialog" role="document">
+			<form class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Напишите ваше обращение</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<label for="">Введите почту: </label>
+					<input type="email" class="subscription-email" id="email" required>
+					<label for="">Введите ваше обращение</label>
+					<textarea id="text" required></textarea>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					<button type="submit" class="btn btn-primary">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<section class="full_screen">
+		<div class="bg_page_register wrapper">
+			<div class="content container" id="silver">
+				<h2>Серебро</h2>
+				<p class="info_purchase">Здесь вы можете купить серебро Black Desert Online по самым низким ценам напрямую у
+					игроков. Комиссия аукциона компенсируется продавцами. Все сделки защищены: продавцы получают деньги только
+					после выполнения заказов.</p>
+				<div class='page'>
+					<a class='circle_item'>
+						<div class='circle'>
+							<div class='circle_title'>
+								<h2 class="center">Серебро</h2>
+								<h3>3</h3>
+							</div>
+							<div class='circle_inner'>
+								<div class='circle_inner__layer'>
+									<img src='img/item_purchase_bg1.jpg'>
+								</div>
+								<div class='circle_inner__layer'>
+									<img src='img/item_purches_gold2.png'>
+								</div>
+								<div class='circle_inner__layer'>
+									<img src='img/item_purches_gold1.png'>
+								</div>
+							</div>
+							<div class='content_shadow'></div>
+						</div>
+					</a>
+					<a class='circle_item'>
+						<div class='circle'>
+							<div class='circle_title'>
+								<h2 class="center">Прокачка</h2>
+								<h3>5</h3>
+							</div>
+							<div class='circle_inner'>
+								<div class='circle_inner__layer'>
+									<img src='/img/item_purchase_bg2.jpg'>
+								</div>
+								<div class='circle_inner__layer'>
+									<img src='img/item_purches_lvlup.png'>
+								</div>
+							</div>
+							<div class='content_shadow'></div>
+						</div>
+					</a>
+					<a class='circle_item'>
+						<div class='circle'>
+							<div class='circle_title'>
+								<h2 class="center">Предметы</h2>
+								<h3>312</h3>
+							</div>
+							<div class='circle_inner'>
+								<div class='circle_inner__layer'>
+									<img src='img/item_purchase_bg3.jpg'>
+								</div>
+								<div class='circle_inner__layer'>
+									<img src='img/item_purches_armor1.png'>
+								</div>
+								<div class='circle_inner__layer'>
+									<img src='img/item_purches_armor2.png'>
+								</div>
+							</div>
+							<div class='content_shadow'></div>
+						</div>
+					</a>
+				</div>
+				<div class="container">
+					<div class="purchase_container">
+						<div class="purchase_sortings">
+							<div class="purchase_btn">
+								<input type="checkbox" id="in_stock">
+								<label for="in_stock">Только товар в наличии</label>
+							</div>
+							<div class="purchase_btn">
+								<button type="button" class="sell" data-toggle="modal" data-target="#exampleModal">Продать игровую
+									валюту</button>
+								<!--<a href="place _an_order.html" class="sell">Продать игровую валюту</a>-->
+							</div>
+						</div>
+						<div class="tablet">
+							<div class="title_tablet">
+								<div class="name">Пользователь</div>
+								<div class="description">Описание</div>
+								<div class="availability">Наличие</div>
+								<div class="price">Цена</div>
+							</div>
+							<div class="block_tablet_shadow">
+								<a href="" class="block_tablet">
+									<div class="description_phone">
+										<div class="name name_user">
+											<div class="avatar_purchase">
+												<img src="img/another_avatar.jpeg" alt="">
+											</div> Andrey
+										</div>
+										<div class="description">999 987 645 кк серебра</div>
+										<div class="availability">
+											<div class="quantity">836</div> кк
+										</div>
+									</div>
+									<div class="price">144 ₽</div>
+								</a>
+							</div>
+							<div class="block_tablet_shadow">
+								<a href="" class="block_tablet">
+									<div class="description_phone">
+										<div class="name name_user">
+											<div class="avatar_purchase">
+												<img src="img/another_avatar.jpeg" alt="">
+											</div> Andrey
+										</div>
+										<div class="description">999 987 645 кк серебра а может и чуточку больше</div>
+										<div class="availability">
+											<div class="quantity">836</div> кк
+										</div>
+									</div>
+									<div class="price">144 ₽</div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="footer">
+					<ul class="menu">
+						<a href="">
+							<li class="item">Условия использования</li>
+						</a>
+						<a href="">
+							<li class="item">Конфиденциальность</li>
+						</a>
+						<a href="" target="_blank">
+							<li class="item">Помощь</li>
+						</a>
+						<a href="" target="_blank">
+							<li class="item">Вопросы и ответы</li>
+						</a>
+					</ul>
+					<div class="container no_margin content">
+						<a href=""><img class="logo" src="/img/logoBDOSHOP.png"></a>
+						<div class="age right">18+</div>
+						<div class="copyright">
+
+							<span>Спроектировано для будующей торговой площадки © BDO SHOP</span>
+							Этот сайт не имеет никакого отношения к Pearl Abyss®
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</section>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="/scripts/script.js"></script>
+
+</body>
+
+</html>

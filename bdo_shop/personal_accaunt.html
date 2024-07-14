@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/assets/css/itc-slider.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<!-- JavaScript -->
+	<script src="/assets/js/itc-slider.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div id="menu-bar" onclick="menuOnClick()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<div class="logo_block">
+				<a href="index.html">
+					<img src="img/logoBDOSHOP.png" alt="Logo" class="logo">
+				</a>
+			</div>
+			<nav onclick="menuOnClick()">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="purchase.html">Покупка</a></li>
+					<li><a href="transactions.html">Транзакции</a></li>
+					<li><a href="all_chat.html">Чаты</a></li>
+					<li><a href="register.html" class="register_header ">Регистрация</a></li>
+					<li><a href="authorization.html" class="authorization ">Вход</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="header_if_fixed hidden" id="go_up"></section>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true" style="display: none; overflow-y: auto;">
+		<div class="modal-dialog" role="document">
+			<form class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Напишите ваше обращение</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<label for="">Введите почту: </label>
+					<input type="email" class="subscription-email" id="email" required>
+					<label for="">Введите ваше обращение</label>
+					<textarea id="text" required></textarea>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					<button type="submit" class="btn btn-primary">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<section class="full_screen">
+		<div class="bg_page_register wrapper">
+			<div class="content container" id="silver">
+				<h2>Личный кабинет</h2>
+				<div class="personal-account_container">
+					<div class="left_column">
+						<div class="personal-accaunt_info">
+							<div class="border_avatar">
+								<div class="avatar">
+									<img src="img/NY9QOUB0Y87PV7BP20230118130138396.400x225.jpg" alt="">
+								</div>
+								<img src="img/avatar-border.png" alt="" class="border_avatar_img">
+							</div>
+							<div class="account_info"></div>
+							<p><strong>Логин:</strong>Grebec Andrey</p>
+							<p><strong>Почта:</strong>grebec2003@gmail.com</p>
+							<p><strong>Телефон:</strong>89061209583</p>
+							<p><strong>Дата регистрации:</strong>24 января 2020, 22:08</p>
+						</div>
+						<h2>Отзывы</h2>
+						<div class="tablet reviews_block">
+							<div href="" class="block_tablet">
+								<div class="avatar avatar_small">
+									<a href="another_accaunt.html">
+										<img src="img/logoBDOSHOP.png" alt="">
+									</a>
+								</div>
+								<div class="reviews_text">
+									<div class="reviews_text_head">
+										<a href="another_accaunt.html" class="name_user">Dogiman</a>
+										<p style="color: #4384D0; ">Заказ #FSADCBRX</p>
+										<div class="rating-result">
+											<span class="active"></span>
+											<span class="active"></span>
+											<span class="active"></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<p class="date">25 марта 2020</p>
+									<p class="feedback">dsjfnsjdfn mklsdmnfkkmnks mkslckkxvdjks
+										dmkfdksfmk
+										fdsfmksdmkmk,lmcklvk
+										dsmkfmkkk
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" right_column">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="footer">
+				<ul class="menu">
+					<a href="">
+						<li class="item">Условия использования</li>
+					</a>
+					<a href="">
+						<li class="item">Конфиденциальность</li>
+					</a>
+					<a href="" target="_blank">
+						<li class="item">Помощь</li>
+					</a>
+					<a href="" target="_blank">
+						<li class="item">Вопросы и ответы</li>
+					</a>
+				</ul>
+				<div class="container no_margin content">
+					<a href=""><img class="logo" src="/img/logoBDOSHOP.png"></a>
+					<div class="age right">18+</div>
+					<div class="copyright">
+
+						<span>Спроектировано для будующей торговой площадки © BDO SHOP</span>
+						Этот сайт не имеет никакого отношения к Pearl Abyss®
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="/scripts/script.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>

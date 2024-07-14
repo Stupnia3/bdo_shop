@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/assets/css/itc-slider.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<!-- JavaScript -->
+	<script src="/assets/js/itc-slider.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div id="menu-bar" onclick="menuOnClick()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<div class="logo_block">
+				<a href="index.html">
+					<img src="img/logoBDOSHOP.png" alt="Logo" class="logo">
+				</a>
+			</div>
+			<nav onclick="menuOnClick()">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="purchase.html">Покупка</a></li>
+					<li><a href="transactions.html">Транзакции</a></li>
+					<li><a href="all_chat.html">Чаты</a></li>
+					<li><a href="register.html" class="register_header ">Регистрация</a></li>
+					<li><a href="personal_accaunt.html" class="authorization ">Вход</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="header_if_fixed hidden" id="go_up"></section>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true" style="display: none; overflow-y: auto;">
+		<div class="modal-dialog" role="document">
+			<form class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Напишите ваше обращение</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<label for="">Введите почту: </label>
+					<input type="email" class="subscription-email" id="email" required>
+					<label for="">Введите ваше обращение</label>
+					<textarea id="text" required></textarea>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					<button type="submit" class="btn btn-primary">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<section class="full_screen">
+		<div class="bg_page_register wrapper">
+			<div class="content autorizaton_form">
+				<h2 class="center">Вход в личный кабинет</h2>
+				<div class="another_register">
+					<span>Нет аккаунта?</span>
+					<a href="register.html">Зарегистрироваться</a>
+				</div>
+				<form action="" method="">
+					<label class="hidden">Логин</label>
+					<input type="text" placeholder="Имя" required>
+					<label class="hidden">Пароль</label>
+					<div class="password">
+						<input type="password" id="password-input" placeholder="Введите пароль" name="password" required>
+						<a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+					</div>
+					<button class="button">Войти</button>
+				</form>
+			</div>
+
+
+
+			<div class="footer">
+				<ul class="menu">
+					<a href="">
+						<li class="item">Условия использования</li>
+					</a>
+					<a href="">
+						<li class="item">Конфиденциальность</li>
+					</a>
+					<a href="" target="_blank">
+						<li class="item">Помощь</li>
+					</a>
+					<a href="" target="_blank">
+						<li class="item">Вопросы и ответы</li>
+					</a>
+				</ul>
+				<div class="container no_margin content">
+					<a href=""><img class="logo" src="/img/logoBDOSHOP.png"></a>
+					<div class="age right">18+</div>
+					<div class="copyright">
+
+						<span>Спроектировано для будующей торговой площадки © BDO SHOP</span>
+						Этот сайт не имеет никакого отношения к Pearl Abyss®
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<script src="/scripts/script.js"></script>
+</body>
+
+</html>
